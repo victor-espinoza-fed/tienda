@@ -1,0 +1,9 @@
+$theme-colors: (
+    "info": tomato,
+    "danger": teal
+);
+@import "~bootstrap/scss/bootstrap";
+h1,
+p {
+  font-family: Lato;
+}
