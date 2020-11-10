@@ -54,10 +54,10 @@ export default function Products() {
     );
   });
   return (
-    <Container className="mt-3">
+    <Container fluid className="mt-3">
       <Row>
-        <Col className="mb-3">
-          <Dropdown variant="primary">
+        <Col md="2" className="mb-3">
+          <Dropdown variant="primary" className="w-100">
             <Dropdown.Toggle id="dropdown-basic">
               Ordenar por
             </Dropdown.Toggle>

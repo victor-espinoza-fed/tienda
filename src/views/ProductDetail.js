@@ -26,18 +26,20 @@ export default function ProductDetail() {
     );
   }) : '';
   return (
-    <Container className="mt-3">
-      <Row hidden={!product}>
-        <Col md={{ span: 1 }}>{photos}</Col>
-        <Col md={{ span: 6 }}>
+    <Container fluid className="mt-3 mb-3">
+      <Row hidden={!product} >
+        <Col md="1" sm="2" xs="2" className="pr-3">{photos}</Col>
+        <Col md="6" sm="6" xs="6">
           <Image src={image} fluid style={{ width: '100%' }}/>
         </Col>
-        <Col md={{ span: 5 }}>
-          <Jumbotron>
+        <Col md="5" sm="4" xs="4">
+          <Jumbotron className="w-100">
             <h5>{name}</h5>
-            <h4 style={{ fontFamily: 'unset' }}>$ {cost}</h4>
-            <p style={{ fontFamily: 'unset' }}><Truck color="#2dbed2" className="mr-2" size={24}/> Envío gratis a todo el país</p>
-            <ButtonGroup size="md" className="mb-2">
+            <h4 className="text-primary">$ {cost}</h4>
+            <div className="mb-3 text-muted">
+              <Truck className="mr-2" size={26}/> <span>Envío gratis a todo el país</span>
+            </div>
+            <ButtonGroup size="sm" className="mb-2">
               <Button
                 variant={selectedSize === 'CH' ? 'primary' : 'light'}
                 className="mr-2"

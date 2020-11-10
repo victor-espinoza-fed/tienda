@@ -24,8 +24,8 @@ export default function App() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
-            <NavDropdown title="Products" id="basic-nav-dropdown">
+            <Nav.Link href="/home">Inicio</Nav.Link>
+            <NavDropdown title="Categorías" id="basic-nav-dropdown">
               {items}
             </NavDropdown>
           </Nav>
