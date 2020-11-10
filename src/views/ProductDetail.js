@@ -13,7 +13,7 @@ export default function ProductDetail() {
   const product = products.find(p => p.id === id);
   const { name, image, cost, colors } = product || {};
   const { images } = product ? colors[0] : [];
-  const photos = product ? images.map((photo, index) => {
+  const photos = product && images ? images.map((photo, index) => {
     const style = index === selectedImage ? { border: '2px solid #2dbed2', cursor: 'pointer' } : { cursor: 'pointer' };
     return (
       <Image
