@@ -7,17 +7,29 @@ const getRandomCost = () => {
 }
 
 export const categories = {
-  category1: {
+  'Playeras hombre': {
     image: "https://via.placeholder.com/286x286",
     products: [{
       id: uuidv4(),
       name: 'Camiseta Adidas',
       image: 'https://via.placeholder.com/100x100',
       colors: [{
-        name: 'Azul',
+        name: 'blue',
         images: ['https://via.placeholder.com/100x100', 'https://via.placeholder.com/100x100'],
       }, {
-        name: 'Rojo',
+        name: 'red',
+        images: ['https://via.placeholder.com/100x100', 'https://via.placeholder.com/100x100'],
+      }, {
+        name: 'black',
+        images: ['https://via.placeholder.com/100x100', 'https://via.placeholder.com/100x100'],
+      }, {
+        name: 'maroon',
+        images: ['https://via.placeholder.com/100x100', 'https://via.placeholder.com/100x100'],
+      }, {
+        name: 'white',
+        images: ['https://via.placeholder.com/100x100', 'https://via.placeholder.com/100x100'],
+      }, {
+        name: 'yellow',
         images: ['https://via.placeholder.com/100x100', 'https://via.placeholder.com/100x100'],
       }],
       cost: getRandomCost(),

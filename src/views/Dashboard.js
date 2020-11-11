@@ -29,7 +29,7 @@ export default function Dashboard() {
   return (
     <Container fluid>
       <Row>
-        <Carousel>
+        <Carousel className="w-100">
           <Carousel.Item>
             <img
               className="d-block w-100"

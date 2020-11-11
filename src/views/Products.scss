@@ -1,0 +1,30 @@
+.colors {
+  span {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    &.red {
+      background: red;
+    }
+    &.yellow {
+      background: yellow;
+    }
+    &.black {
+      background: black;
+    }
+    &.white {
+      background: white;
+    }
+    &.blue {
+      background: blue;
+    }
+    &.maroon {
+      background: maroon;
+    }
+
+  }
+}
