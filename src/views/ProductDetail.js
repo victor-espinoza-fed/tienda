@@ -13,11 +13,10 @@ export default function ProductDetail() {
   const [selectedColor, setSelectedColor] = useState(0);
   const { products } = categoryProducts;
   const product = products.find(p => p.id === id);
-  const { name, image, cost, colors = [] } = product || {};
-  console.log(product);
+  const { name, cost, colors = [] } = product || {};
   const { images } = product ? colors[selectedColor] : [];
   const palette = colors.map(({ name }, index) => {
-    return (<span className={name} key={name} onClick={() => setSelectedColor(index)}></span>);
+    return (<span className={name} key={name} onClick={() => { setSelectedColor(index); setSelectedImage(0) }}></span>);
   })
   const photos = product && images ? images.map((photo, index) => {
     const style = index === selectedImage ? { border: '2px solid #2dbed2', cursor: 'pointer' } : { cursor: 'pointer' };
@@ -44,7 +43,7 @@ export default function ProductDetail() {
       <Row hidden={!product} >
         <Col md="1" sm="2" xs="2" className="pr-3">{photos}</Col>
         <Col md="6" sm="6" xs="6">
-          <Image src={image} fluid style={{ width: '100%' }}/>
+          <Image src={images[selectedImage]} fluid className="w-100"/>
         </Col>
         <Col md="5" sm="4" xs="4">
           <Jumbotron className="w-100">

@@ -41,10 +41,10 @@ export default function Products() {
     const href = `/product/${category}/${id}`;
     const palette = colors.map(({ name }) => <span className={name} key={name}></span>);
     return (
-      <Col md="4" lg="3" xl="2" xs="6" sm="6" key={key} className="mb-3">
+      <Col md="4" lg="4" xl="3" xs="6" sm="6" key={key} className="mb-3">
         <Card className="w-100">
           <Link to={href}>
-            <Card.Img variant="top" src={image} />
+            <Card.Img variant="top" className="w-100" src={image}  />
           </Link>
           <Card.Body>
             <Link to={href}>
@@ -63,7 +63,7 @@ export default function Products() {
         <Col md="2" className="mb-3">
           <Dropdown variant="primary" className="w-100">
             <Dropdown.Toggle id="dropdown-basic">
-              Ordenar por
+              Ordenar
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item onClick={onSort.bind(this, 'priceAsc')}>Menor precio</Dropdown.Item>

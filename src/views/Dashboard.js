@@ -14,10 +14,10 @@ export default function Dashboard() {
   const cards = Object.entries(categories).map(([key, value]) => {
     const href = `/products/${key}`;
     return (
-      <Col md={{ span: 2 }} key={key}>
-        <Card style={{ width: '100%' }}>
+      <Col md="4" key={key}>
+        <Card className="w-100">
           <Link to={href}>
-            <Card.Img variant="top" src={value.image} />
+            <Card.Img variant="top" src={value.image} height="400"/>
           </Link>
           <Card.Body>
             <Button href={href} variant="link">{key}</Button>
