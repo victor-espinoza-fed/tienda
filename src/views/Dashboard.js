@@ -33,37 +33,26 @@ export default function Dashboard() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://via.placeholder.com/1233x400"
-              alt="First slide"
+              height="400"
+              src={`${base}Banners%2Fbanner-1.jpg?alt=media&token=196fa540-0e5a-45e4-9552-a9dd5c23a1c3`}
+              alt="Slogan"
             />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://via.placeholder.com/1233x400"
-              alt="Third slide"
+              height="400"
+              src={`${base}Banners%2Fbanner-2.jpg?alt=media&token=b0363408-79e2-47ff-bc23-c67605d31635`}
+              alt="Buen Fin"
             />
-
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://via.placeholder.com/1233x400"
-              alt="Third slide"
+              height="400"
+              src={`${base}Banners%2Fbanner-3.jpg?alt=media&token=2d77590a-fb52-453c-a3fd-076bd6a236e5`}
+              alt="Descuento"
             />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </Row>

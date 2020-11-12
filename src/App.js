@@ -9,7 +9,7 @@ import "./style.scss";
 import Dashboard from './views/Dashboard';
 import ProductDetail from './views/ProductDetail';
 import Products from './views/Products';
-import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Container, Image } from 'react-bootstrap';
 import { categories } from "./helpers";
 
 export default function App() {
@@ -20,7 +20,11 @@ export default function App() {
   return (
     <>
       <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-        <Navbar.Brand href="/">Anna's Shop</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <Image
+            style={{ maxHeight: '100%', maxWidth: '75px' }}
+            src={`${base}compact-logo.png?alt=media&token=90d46768-e7e6-435e-967c-f5d8eecb3a95`}/>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
