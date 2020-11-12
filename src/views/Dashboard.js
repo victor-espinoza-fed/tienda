@@ -7,7 +7,7 @@ import {
   Row,
   Col,
 } from 'react-bootstrap';
-import { categories } from '../helpers';
+import { categories, base } from '../helpers';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 export default function Dashboard() {
