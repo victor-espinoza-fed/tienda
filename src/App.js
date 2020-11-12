@@ -10,7 +10,7 @@ import Dashboard from './views/Dashboard';
 import ProductDetail from './views/ProductDetail';
 import Products from './views/Products';
 import { Nav, Navbar, NavDropdown, Container, Image } from 'react-bootstrap';
-import { categories } from "./helpers";
+import { categories, base } from "./helpers";
 
 export default function App() {
   const items = Object.entries(categories).map(([key]) => {
